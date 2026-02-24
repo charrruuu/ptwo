@@ -8,7 +8,7 @@ y=np.array([2,4,6])
 model=LinearRegression()
 model.fit(x,y)
 print('model trained')
-with open('model.pkl','wb'):
+with open('model.pkl','wb')as f:
     pickle.dump(model,f)
 print('model saved')
 prediction=model.predict([[4]])[0]
