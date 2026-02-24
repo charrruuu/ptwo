@@ -6,7 +6,7 @@ print("====ML CI Pipeline====")
 x=np.array([[1],[2],[3]])
 y=np.array([2,4,6])
 model=LinearRegression()
-model.fir(x,y)
+model.fit(x,y)
 print('model trained')
 with open('model.pkl','wb'):
     pickle.dump(model,f)
